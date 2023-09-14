@@ -10,6 +10,9 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
+  esbuild: {
+    jsxFactory: 'h', 
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
